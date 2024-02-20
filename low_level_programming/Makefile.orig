@@ -1,0 +1,17 @@
+hello:
+<<<<<<< HEAD
+	nasm -felf64 hello.asm -g -o hello.o
+	ld -o hello hello.o
+	chmod u+x hello
+reg_out:
+	nasm -felf64 reg_out.asm -g -o reg_out.o
+	ld -o reg_out reg_out.o
+	chmod u+x reg_out
+clean:
+	rm reg_out hello
+=======
+	nasm -felf64 hello.asm -o hello.o
+	ld -o hello hello.o
+	chmod u+x hello
+>>>>>>> refs/remotes/origin/master
+
